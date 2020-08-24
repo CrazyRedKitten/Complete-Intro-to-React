@@ -1,0 +1,20 @@
+{
+  "name": "Complete-Intro-to-React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrazyRedKitten/Complete-Intro-to-React.git"
+  },
+  "keywords": [],
+  "author": "Aleksandr Shchilkin <crazyredkitten@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrazyRedKitten/Complete-Intro-to-React/issues"
+  },
+  "homepage": "https://github.com/CrazyRedKitten/Complete-Intro-to-React#readme"
+}
