@@ -1,5 +1,5 @@
 {
-  "name": "Complete-Intro-to-React",
+  "name": "complete-intro-to-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,5 +25,9 @@
     "eslint-config-prettier": "^6.11.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
