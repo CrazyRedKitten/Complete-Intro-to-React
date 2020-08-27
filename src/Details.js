@@ -19,12 +19,28 @@ class Details extends React.Component {
           breed: animal.breeds.primary,
           loading: false,
         },
+        // eslint-disable-next-line no-console
         console.error
       );
     });
   }
   render() {
-    return <div></div>;
+    if (this.setState.loading) {
+      return <h1>Loading</h1>;
+    }
+
+    const { animal, breed, location, description, name } = this.state;
+
+    return (
+      <div className="details">
+        <div>
+          <h1>{name}</h1>
+          <h2>{`${animal} - ${breed} - ${location}`}</h2>
+          <button>Adopt {name}</button>
+          <p>{description}</p>
+        </div>
+      </div>
+    );
   }
 }
 
