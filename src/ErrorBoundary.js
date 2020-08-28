@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 class ErrorBoundary extends Component {
   state = { hasError: false };
 
-  static getDerivedStateFromProps() {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
   componentDidCatch(error, info) {
@@ -15,7 +15,8 @@ class ErrorBoundary extends Component {
       return (
         <h1>
           There was an error with this listing. <Link to="/">Click here</Link>{" "}
-          to go back to the home page or wait five seconds.
+          to go back to the home page or wait five seconds.{" "}
+          {String(this.state.hasError)}
         </h1>
       );
     }
