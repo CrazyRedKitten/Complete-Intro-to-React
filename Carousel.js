@@ -16,6 +16,10 @@ export class Carousel extends Component {
     return { photos };
   }
 
+  handleEventClick = (event) => {
+    this.setState({ active: +event.target.dataset.index });
+  };
+
   render() {
     const { photos, active } = this.state;
 
