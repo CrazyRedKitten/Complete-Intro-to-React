@@ -32,10 +32,12 @@ const SearchParams = () => {
 
   return (
     <div className="search-params">
-      <form  onSubmit={(event) => {
-        event.preventDefault();
-        requestPets();
-      }}>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           Location
           <input
@@ -47,9 +49,7 @@ const SearchParams = () => {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <button>
-          Submit
-        </button>
+        <button>Submit</button>
       </form>
       <Results pets={pets} />
     </div>
